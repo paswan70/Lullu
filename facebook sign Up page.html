@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" type="text/css" href="style.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+<h1 class="header">Mahabir Industries</h1>
+
+<form id="frm">
+    <h1>Sign Up</h1>
+    <p>It's quick and easy.</p>
+    <hr>
+
+    <!-- Name Inputs -->
+    <div class="name-row">
+        <div class="input-container">
+            <input type="text" name="firstname" id="firstname" placeholder="First Name" required>
+            <img src="warning.png" alt="warning" id="f_warning" width="15" style="display:none;">
+            <img src="fhint.png" alt="hint" id="fhint" width="60" style="display:none;">
+        </div>
+        <div class="input-container">
+            <input type="text" name="surname" id="surname" placeholder="Surname" required>
+            <img src="warning.png" alt="warning" id="s_warning" width="15" style="display:none;">
+        </div>
+    </div>
+
+    <!-- Address Input -->
+    <div class="input-container">
+        <input type="text" name="address" id="address" placeholder="Address" required>
+        <img src="warning.png" alt="warning" id="a_warning" width="15" style="display:none;">
+    </div>
+
+    <!-- City Input -->
+    <div class="input-container">
+        <input type="text" name="city" id="city" placeholder="City" required>
+        <img src="warning.png" alt="warning" id="c_warning" width="15" style="display:none;">
+    </div>
+
+    <!-- Company Name Input -->
+    <div class="input-container">
+        <input type="text" name="company" id="company" placeholder="Company Name" required>
+        <img src="warning.png" alt="warning" id="co_warning" width="15" style="display:none;">
+    </div>
+
+    <!-- Email Input -->
+    <div class="input-container">
+        <input type="text" name="email" id="email" placeholder="Email Address or Mobile Number" required>
+        <img src="warning.png" alt="warning" id="e_warning" width="15" style="display:none;">
+    </div>
+
+    <!-- Password Input -->
+    <div class="input-container">
+        <input type="password" name="password" id="password" placeholder="New Password" required>
+        <img src="warning.png" alt="warning" id="p_warning" width="15" style="display:none;">
+        <div id="password_hint" style="display:none; color: gray;">
+            Please enter a strong password. Use at least 8 characters, including letters, numbers, and symbols.
+        </div>
+    </div>
+
+    <!-- Password Hint Section -->
+    <div id="password_hind1" style="display:none;">
+        <p>Use a Securely Generated Password</p>
+        <p id="pass_hint_text">Dedfg%j655fgfjh</p>
+    </div><br>
+
+    <!-- Submit Button -->
+    <input type="submit" id="submit" value="Sign Up">
+</form>
+
+<script src="javascript.js" defer></script> <!-- Link to your JavaScript file -->
+</body>
+</html>
